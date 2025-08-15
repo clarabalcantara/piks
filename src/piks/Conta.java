@@ -3,47 +3,24 @@ package piks;
 import java.util.ArrayList;
 
 public class Conta {
-    private int id;
-    private String chavepiks;
-    private double saldo;
-    private Conta conta;
-    private ArrayList<Lancamento> lancamentos = new ArrayList<>();
+    private int id; private String chavePiks; private double saldo; private Cliente cliente; private ArrayList<Lancamento> lancamentos;
 
-    public Conta(int id, String chavepiks, double saldo) {
-        this.id = id; this.chavepiks = chavepiks; this.saldo = saldo;
+    // construtor
+    public Conta(int id, String chavePiks, double saldo, Cliente cliente) {
+        this.id = id; this.chavePiks = chavePiks; this.saldo = saldo; this.cliente = cliente; this.lancamentos = new ArrayList<>();
     }
-    public int getId() {
-        return id;
+    // metodos
+    public void creditar(double valor) { this.saldo += valor; }
+    public void debitar(double valor) { this.saldo -= valor; }
+    public int getId() { return id; }
+    public String getChavePiks() { return chavePiks; }
+    public double getSaldo() { return saldo; }
+    public Cliente getCliente() { return cliente; }
+    public ArrayList<Lancamento> getLancamentos() { return lancamentos; }
+    public void setSaldo (double saldo) { this.saldo = saldo; }
+    public void setChavePiks (String chavePiks) { this.chavePiks = chavePiks; }
+    public void adicionar (Lancamento lanc){ this.lancamentos.add(lanc); }
+    public void transferir (double valor, Conta destino) {// usar metodo creditar e debitar}
     }
-    public void creditar(valor:double){
-        return
-    }
-    public void debitar(valorÇ:double){
-        return 
-    }
-
-    public String getChavepiks() {
-        return chavepiks;
-    }
-    public double getSaldo() {
-        return saldo;
-    }
-    public Cliente getCliente() {
-        return conta;
-    }
-    public void setCliente(){
-
-    }
-    public void setSalto(){
-
-    }
-    public void setChavePiks(){
-
-    }
-    public void adicionarLancamento(Lancamento lancamento){
-        lancamentos.add(lancamento);
-    }
-    public void transferir (valor:double, destino:Conta) {
-        return
-    }
-}
+}      
+ 

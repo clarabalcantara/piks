@@ -1,14 +1,12 @@
 package piks;
 
 public class Cliente {
-    private int cpf;
-    private String nome;
-    private Cliente cliente;
+    private int cpf; private String nome; private Conta conta;
 
-    public void setConta(cta:Conta) {
+    public Cliente(int cpf, String nome) {
+        this.cpf = cpf; this.nome = nome; 
     }
-    public Conta getConta(cta:Conta) {
-        String txt = this.cpf + this.cliente;"";
-        return  ;
-    }
+    
+    public void setConta(Conta cta) { this.conta = cta;}
+    public Conta getConta() { return this.conta; }
 }
