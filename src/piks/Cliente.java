@@ -8,6 +8,7 @@ public class Cliente {
     public void setConta(cta:Conta) {
     }
     public Conta getConta(cta:Conta) {
-        return 
+        String txt = this.cpf + this.cliente;"";
+        return  ;
     }
 }
