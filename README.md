@@ -1,7 +1,7 @@
-# 💱 Sistema PIKS
+# 💱 Sistema PIKS: Transferência Bancária
 > IFPB/JP – TSI – Programação Orientada a Objetos (Prof. Fausto Ayres). Projeto 2.
 
-### Objetivo: Implementar o sistema de transferência bancária PIKS.
+### Objetivo: Implementar o sistema de transferência bancária PIKS com base nas regras de negócio (requisitos) apresentadas no documento do projeto.
 ---
 ## ➡️ Requisito de Dados (classes)
 ```mermaid
