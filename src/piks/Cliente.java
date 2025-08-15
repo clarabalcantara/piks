@@ -7,4 +7,8 @@ public class Cliente {
 
     public void setConta(Conta cta) { this.conta = cta;}
     public Conta getConta() { return this.conta; }
+
+    // metodos n mencionados no escolpo
+    public int getCpf() { return this.cpf; }
+    public String getNome() { return this.nome; }
 }
