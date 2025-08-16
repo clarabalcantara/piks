@@ -8,4 +8,8 @@ public class Lancamento {
     public Lancamento(double valor, Character tipo) {
         this.datahora = LocalDateTime.now(); this.valor = valor; this.tipo = tipo; 
     }
+    // metodos fora do escolpo
+    public LocalDateTime getDatahora() { return datahora; }
+    public double getValor() { return valor; }
+    public Character getTipo() { return tipo; }
 }

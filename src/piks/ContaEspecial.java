@@ -11,5 +11,7 @@ public class ContaEspecial extends Conta {
             setSaldo(getSaldo() - valor);
         }
     }
+    // metodo 
+    public double getLimite() { return limite; }
 
 }
